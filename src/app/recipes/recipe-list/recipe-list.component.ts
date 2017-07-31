@@ -3,22 +3,22 @@ import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../recipe.model';
 
 @Component({
-  selector: 'app-recipe-list',
-  templateUrl: './recipe-list.component.html',
-  styleUrls: ['./recipe-list.component.css']
+    selector: 'app-recipe-list',
+    templateUrl: './recipe-list.component.html',
+    styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
 
-  recipes: Recipe[] = [];
+    recipes: Recipe[] = [];
 
-  constructor() {
-      this.recipes = [
-          new Recipe('A test recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
-          new Recipe('A test recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
-      ];
-  }
+    constructor() {
+        this.recipes = [
+            new Recipe('A test recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
+            new Recipe('A test recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
+        ];
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }
